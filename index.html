@@ -2,42 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENET RESTAURANT</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #FFF8F0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 24px;
-            background: #8B4513;
-            color: white;
-            text-decoration: none;
-            border-radius: 40px;
-            font-weight: 600;
-        }
-        a:hover {
-            background: #A0522D;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="GENET RESTAURANT - Authentic Ethiopian Cuisine. Digital Menu - View our delicious tibs, stews, coffee, and more.">
+    <meta name="theme-color" content="#8B4513">
+    <title>GENET RESTAURANT | Digital Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🍛 GENET RESTAURANT</h1>
-        <p>Authentic Ethiopian Cuisine</p>
-        <a href="menu.html">View Menu →</a>
-        <a href="contact.html">Contact Us →</a>
+
+<div class="page-transition"></div>
+
+<!-- Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+        <h3>🍛 GENET RESTAURANT</h3>
+        <button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
     </div>
+    <div class="sidebar-nav">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="menu.html"><i class="fas fa-utensils"></i> Digital Menu</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <div class="sidebar-footer">
+        <p><i class="fas fa-phone-alt"></i> +251 900 000 000</p>
+        <p><i class="fas fa-envelope"></i> info@genetrestaurant.com</p>
+        <p><i class="fas fa-location-dot"></i> Addis Ababa, Ethiopia</p>
+    </div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Header -->
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <a href="index.html">
+                <h1>🍛 GENET RESTAURANT</h1>
+                <span>Authentic Ethiopian Cuisine</span>
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Digital Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-brighter"></div>
+        <div class="container hero-content">
+            <h1>Welcome to <span class="highlight">GENET RESTAURANT</span> 🍛</h1>
+            <p>Authentic Ethiopian Flavors, Made with Love</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="hero-btn">View Digital Menu →</a>
+                <a href="contact.html" class="hero-btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" data-aos="fade-up">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Traditional Recipes</h3>
+                    <p>Authentic Ethiopian flavors passed down through generations</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Daily sourced, premium quality ingredients</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Service</h3>
+                    <p>Ready in 30 minutes or less</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Digital Menu</h3>
+                    <p>View our complete menu online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items Preview -->
+    <section class="container" data-aos="fade-up">
+        <h2 class="section-title">🍛 Popular Dishes</h2>
+        <div class="preview-grid">
+            <div class="preview-card">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" alt="Tibs">
+                <h3>ጥብስ / Tibs</h3>
+                <p>Sautéed meat with peppers</p>
+                <div class="price">ETB 550</div>
+            </div>
+            <div class="preview-card">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" alt="Key Wat">
+                <h3>ቀይ ወጥ / Key Wat</h3>
+                <p>Spicy red stew</p>
+                <div class="price">ETB 430</div>
+            </div>
+            <div class="preview-card">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" alt="Coffee">
+                <h3>ቡና / Coffee</h3>
+                <p>Traditional Ethiopian coffee</p>
+                <div class="price">ETB 50</div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="menu.html" class="view-all-btn">View Full Menu →</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">🍛 GENET RESTAURANT</div>
+                <p class="tagline">Authentic Ethiopian Cuisine</p>
+                <p>Traditional Flavors<br>Addis Ababa, Ethiopia</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Digital Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <ul><li>Mon-Sat: 8am-10pm</li><li>Sun: 9am-9pm</li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul><li><i class="fas fa-phone"></i> +251 900 000 000</li></ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GENET RESTAURANT — Authentic Ethiopian Cuisine</p>
+            <p class="footer-heart">✨ Taste of Ethiopia, made with love ✨</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+</script>
 </body>
 </html>
