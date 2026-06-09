@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="GENET RESTAURANT Menu - Authentic Ethiopian Tibs, Stews, Coffee & More. Freshly prepared traditional cuisine.">
+    <meta name="theme-color" content="#8B4513">
+    <title>Menu | GENET RESTAURANT | Authentic Ethiopian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/251900000000?text=Hello%20GENET%20RESTAURANT%2C%20I%20would%20like%20to%20place%20an%20order" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Order on WhatsApp</span>
+</a>
+
+<!-- Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+        <h3>🍛 GENET RESTAURANT</h3>
+        <button class="close-sidebar" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sidebar-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-heart"></i> About</a>
+        <a href="menu.html" class="active"><i class="fas fa-utensils"></i> Menu</a>
+        <a href="catering.html"><i class="fas fa-champagne-glasses"></i> Catering</a>
+        <a href="order.html"><i class="fas fa-shopping-bag"></i> Order</a>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Contact</a>
+    </div>
+    <a href="order.html" class="sidebar-order-btn"><i class="fas fa-shopping-cart"></i> ORDER NOW</a>
+    <div class="sidebar-footer">
+        <p><i class="fas fa-phone-alt"></i> +251 900 000 000</p>
+        <p><i class="fas fa-envelope"></i> info@genetrestaurant.com</p>
+        <p><i class="fas fa-location-dot"></i> Addis Ababa, Ethiopia</p>
+    </div>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Header -->
+<header class="main-header">
+    <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <a href="index.html">
+                <h1>🍛 GENET RESTAURANT</h1>
+                <span>Authentic Ethiopian Cuisine</span>
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="catering.html">Catering</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="order.html" class="btn-order"><i class="fas fa-shopping-cart"></i> Order Now</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=1920&h=800&fit=crop');"></div>
+        <div class="hero-overlay-brighter"></div>
+        <div class="container hero-content">
+            <h1>Our <span class="highlight">Menu</span> 🍛</h1>
+            <p>Authentic Ethiopian flavors, freshly prepared daily</p>
+        </div>
+    </section>
+
+    <!-- Category Filters - Simple Text Navigation -->
+    <div class="category-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="simple-category-nav">
+            <button class="simple-cat-btn active" data-cat="all">🍽️ All Dishes</button>
+            <button class="simple-cat-btn" data-cat="tibs-wot">🍖 ጥብስ & ወጥ / Tibs & Stews</button>
+            <button class="simple-cat-btn" data-cat="beverages">☕ ትኩስ ነገር / Hot Beverages</button>
+            <button class="simple-cat-btn" data-cat="drinks">🥤 መጠጥ / Soft Drinks</button>
+        </div>
+    </div>
+
+    <!-- Menu Items Grid -->
+    <section class="container" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-grid" id="menuGrid">
+            
+            <!-- ========== TIBS & STEWS SECTION ========== -->
+            <!-- Item 1 - Tibs -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Tibs">
+                <div class="menu-card-badge">ተወዳጅ / Popular</div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h3>ጥብስ</h3>
+                        <h4>Tibs (Sautéed meat)</h4>
+                    </div>
+                    <p>Tender sautéed beef or lamb with onions, peppers, and Ethiopian spices</p>
+                    <div class="menu-card-price">ETB 550</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 2 - Qey Qul -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Qey Qul">
+                <div class="menu-card-content">
+                    <h3>ቅቅል</h3>
+                    <h4>Qey Qul (Spicy stew)</h4>
+                    <p>Rich, spicy beef stew simmered with berbere and Ethiopian butter</p>
+                    <div class="menu-card-price">ETB 460</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 3 - Key Wat -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Key Wat">
+                <div class="menu-card-content">
+                    <h3>ቀይ ወጥ</h3>
+                    <h4>Key Wat (Red Stew)</h4>
+                    <p>Classic Ethiopian red stew with berbere, onions, and garlic</p>
+                    <div class="menu-card-price">ETB 430</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 4 - Quanta Firfir -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Quanta Firfir">
+                <div class="menu-card-badge">ልዩ / Special</div>
+                <div class="menu-card-content">
+                    <h3>ቋንብ ፍርፍር</h3>
+                    <h4>Quanta Firfir (Spiced dried beef)</h4>
+                    <p>Dried beef mixed with berbere and served with injera</p>
+                    <div class="menu-card-price">ETB 360</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 5 - Tibs Firfir -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Tibs Firfir">
+                <div class="menu-card-content">
+                    <h3>ጥብስ ፍርፍር</h3>
+                    <h4>Tibs Firfir</h4>
+                    <p>Spiced tibs mixed with torn injera pieces</p>
+                    <div class="menu-card-price">ETB 350</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 6 - Falut -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Falut">
+                <div class="menu-card-content">
+                    <h3>ፋሉት</h3>
+                    <h4>Falut (Special salad platter)</h4>
+                    <p>Fresh salad platter with avocado, tomatoes, and special dressing</p>
+                    <div class="menu-card-price">ETB 350</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 7 - Gomen Besiga -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Gomen Besiga">
+                <div class="menu-card-content">
+                    <h3>ጎመን በስጋ</h3>
+                    <h4>Gomen Besiga (Collard greens with meat)</h4>
+                    <p>Collard greens slow-cooked with beef and spices</p>
+                    <div class="menu-card-price">ETB 350</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 8 - Minchet Abish -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Minchet Abish">
+                <div class="menu-card-content">
+                    <h3>ምንችት</h3>
+                    <h4>Minchet Abish (Minced beef stew)</h4>
+                    <p>Finely minced beef stew with berbere and Ethiopian spices</p>
+                    <div class="menu-card-price">ETB 350</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 9 - Tahiro -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Tahiro">
+                <div class="menu-card-content">
+                    <h3>ጣህር</h3>
+                    <h4>Tahiro (Simple stew)</h4>
+                    <p>Light, comforting stew perfect with injera</p>
+                    <div class="menu-card-price">ETB 300</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 10 - Shiro beT'et -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Shiro">
+                <div class="menu-card-content">
+                    <h3>ሽሮ በትጥ</h3>
+                    <h4>Shiro beT'et (Chickpea with spice)</h4>
+                    <p>Creamy chickpea stew with Ethiopian spices</p>
+                    <div class="menu-card-price">ETB 270</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 11 - Firfir beT'et -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Firfir">
+                <div class="menu-card-content">
+                    <h3>ፍርፍር በትጥ</h3>
+                    <h4>Firfir beT'et (Kita firfir)</h4>
+                    <p>Spiced injera or kita pieces mixed with berbere</p>
+                    <div class="menu-card-price">ETB 280</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 12 - Ermija Quanta -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Ermija Quanta">
+                <div class="menu-card-badge">ልዩ / Special</div>
+                <div class="menu-card-content">
+                    <h3>እርምጃ ቋንብ</h3>
+                    <h4>Ermija Quanta (Dried beef specialty)</h4>
+                    <p>Traditional dried beef preparation with unique spices</p>
+                    <div class="menu-card-price">ETB 360</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 13 - Enset Besiga -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Enset Besiga">
+                <div class="menu-card-content">
+                    <h3>እንት በስጋ</h3>
+                    <h4>Enset Besiga (Meat with enset)</h4>
+                    <p>Meat prepared with enset (false banana plant)</p>
+                    <div class="menu-card-price">ETB 300</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 14 - Yefiha Yefesk -->
+            <div class="menu-card" data-cat="tibs-wot">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Yefiha Yefesk">
+                <div class="menu-card-content">
+                    <h3>የፍሃ የፍስክ</h3>
+                    <h4>Yefiha Yefesk (Special mixed platter)</h4>
+                    <p>A delicious mix of various Ethiopian specialties</p>
+                    <div class="menu-card-price">ETB 370</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- ========== HOT BEVERAGES SECTION ========== -->
+            <!-- Item 15 - Tea -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Tea">
+                <div class="menu-card-content">
+                    <h3>ሻይ</h3>
+                    <h4>Tea (Shai)</h4>
+                    <p>Traditional Ethiopian spiced tea</p>
+                    <div class="menu-card-price">ETB 40</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 16 - Machine Coffee -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Coffee">
+                <div class="menu-card-content">
+                    <h3>ቡና የማሽን</h3>
+                    <h4>Machine Coffee</h4>
+                    <p>Freshly brewed machine coffee</p>
+                    <div class="menu-card-price">ETB 60</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 17 - Espresso -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Espresso">
+                <div class="menu-card-content">
+                    <h3>ስፕሬስ</h3>
+                    <h4>Spress (Espresso)</h4>
+                    <p>Rich, bold Italian-style espresso</p>
+                    <div class="menu-card-price">ETB 60</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 18 - Milk -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Milk">
+                <div class="menu-card-content">
+                    <h3>ወተት</h3>
+                    <h4>Wotet (Milk)</h4>
+                    <p>Fresh, warm milk</p>
+                    <div class="menu-card-price">ETB 90</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 19 - Macchiato -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Macchiato">
+                <div class="menu-card-content">
+                    <h3>ማካያት</h3>
+                    <h4>Macchiato</h4>
+                    <p>Espresso with a touch of steamed milk</p>
+                    <div class="menu-card-price">ETB 90</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 20 - Traditional Coffee -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Traditional Coffee">
+                <div class="menu-card-badge">ባህላዊ / Traditional</div>
+                <div class="menu-card-content">
+                    <h3>የደበና ቡና</h3>
+                    <h4>Yedebena Buna (Traditional coffee)</h4>
+                    <p>Authentic Ethiopian coffee ceremony style</p>
+                    <div class="menu-card-price">ETB 50</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 21 - Spress Shai -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Spress Shai">
+                <div class="menu-card-content">
+                    <h3>ስፕሬስ ሻይ</h3>
+                    <h4>Spress Shai (Tea with espresso)</h4>
+                    <p>Unique combination of tea and espresso</p>
+                    <div class="menu-card-price">ETB 120</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 22 - Luz -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Luz">
+                <div class="menu-card-content">
+                    <h3>ለውዝ</h3>
+                    <h4>Luz (Almond drink)</h4>
+                    <p>Creamy almond-based traditional drink</p>
+                    <div class="menu-card-price">ETB 100</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 23 - Felesher Shai -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Felesher Shai">
+                <div class="menu-card-content">
+                    <h3>ፍልሽር ሻይ</h3>
+                    <h4>Felesher Shai (Spiced tea)</h4>
+                    <p>Tea infused with cardamom, cinnamon, and cloves</p>
+                    <div class="menu-card-price">ETB 70</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 24 - Tesher -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Tesher">
+                <div class="menu-card-content">
+                    <h3>ተሸር</h3>
+                    <h4>Teshér (Cardamom coffee)</h4>
+                    <p>Coffee with aromatic cardamom</p>
+                    <div class="menu-card-price">ETB 50</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 25 - Lemon Tea -->
+            <div class="menu-card" data-cat="beverages">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Lemon Tea">
+                <div class="menu-card-content">
+                    <h3>ሻይ በሎሚ</h3>
+                    <h4>Shai belomi (Lemon tea)</h4>
+                    <p>Refreshing tea with fresh lemon</p>
+                    <div class="menu-card-price">ETB 50</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- ========== SOFT DRINKS SECTION ========== -->
+            <!-- Item 26 - Water Small -->
+            <div class="menu-card" data-cat="drinks">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Water">
+                <div class="menu-card-content">
+                    <h3>ውሃ ነገር ለትር</h3>
+                    <h4>Water (Small bottle)</h4>
+                    <p>500ml bottled water</p>
+                    <div class="menu-card-price">ETB 40</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 27 - Water 1L -->
+            <div class="menu-card" data-cat="drinks">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Water 1L">
+                <div class="menu-card-content">
+                    <h3>ውሃ ለትር</h3>
+                    <h4>Water (1 liter)</h4>
+                    <p>1 liter bottled water</p>
+                    <div class="menu-card-price">ETB 50</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 28 - Water Large -->
+            <div class="menu-card" data-cat="drinks">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Water Large">
+                <div class="menu-card-content">
+                    <h3>ውሃ ለትር (ትልቅ)</h3>
+                    <h4>Water (Large liter)</h4>
+                    <p>1.5 liter bottled water</p>
+                    <div class="menu-card-price">ETB 60</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 29 - Soft Drink -->
+            <div class="menu-card" data-cat="drinks">
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Soft Drink">
+                <div class="menu-card-content">
+                    <h3>ለስላሳ</h3>
+                    <h4>Soft drink (Coke, Sprite, etc.)</h4>
+                    <p>Choice of Coca-Cola, Sprite, Fanta, or Pepsi</p>
+                    <div class="menu-card-price">ETB 60</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+
+            <!-- Item 30 - Amba Water -->
+            <div class="menu-card" data-cat="drinks">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=300&fit=crop" class="menu-card-img" alt="Amba Water">
+                <div class="menu-card-content">
+                    <h3>አምባ ውሃ</h3>
+                    <h4>Amba Water (Sparkling)</h4>
+                    <p>Carbonated mineral water</p>
+                    <div class="menu-card-price">ETB 60</div>
+                    <a href="order.html" class="order-btn">Order Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">🍛 GENET RESTAURANT</div>
+                <p class="tagline">Authentic Ethiopian Cuisine</p>
+                <p>Traditional Flavors<br>Addis Ababa, Ethiopia</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul class="hours">
+                    <li>Monday - Saturday</li>
+                    <li><strong>8:00 AM - 10:00 PM</strong></li>
+                    <li>Sunday</li>
+                    <li><strong>9:00 AM - 9:00 PM</strong></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +251 900 000 000</li>
+                    <li><i class="fas fa-envelope"></i> info@genetrestaurant.com</li>
+                    <li><i class="fas fa-location-dot"></i> Addis Ababa, Ethiopia</li>
+                </ul>
+                <div class="payment-badge">
+                    <span>We Accept:</span>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GENET RESTAURANT — Authentic Ethiopian Cuisine | Addis Ababa, Ethiopia</p>
+            <p class="footer-heart">✨ Taste of Ethiopia, made with love ✨</p>
+        </div>
+    </div>
+</footer>
+
+<div id="toastMsg" class="toast-msg">✓ Added to cart</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+    
+    // Category Filter
+    const catBtns = document.querySelectorAll('.simple-cat-btn');
+    const menuCards = document.querySelectorAll('.menu-card');
+    
+    catBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            catBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const cat = this.getAttribute('data-cat');
+            menuCards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.4s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
